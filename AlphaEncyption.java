@@ -1,4 +1,5 @@
 //@author roman.bond
+//Make directory class
 
 package javadistanceapplication;
 

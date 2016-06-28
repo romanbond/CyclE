@@ -1,51 +1,30 @@
 //@author roman.bond
-//Make directory class
-
 package javadistanceapplication;
+import static java.lang.Integer.parseInt;
+import java.util.Scanner;
+import java.io.*;
 
 public class AlphaEncyption {
+
     public static void main (String[] args){
         AlphaEncyption obj = new AlphaEncyption();
         Scanner in = new Scanner(System.in);
         String s;
         s = in.nextLine();
-
         //convertAlpha(n);
         System.out.println("Just a test -- " + convertAlpha(s));
-    }
-
-    private static final String[] alphaNames = {
-        "",
-        " Alpha ",
-        " Bravo ",
-        " Charlie ",
-        " Delta ",
-        " Echo ",
-        " Foxtrot ",
-        " Golf ",
-        " Hotel ",
-        " India ",
-        " Juliet ",
-        " Kilo ",
-        " Lima ",
-        " Mike ",
-        " November ",
-        " Oscar ",
-        " Papa ",
-        " Quebec ",
-        " Romeo ",
-        " Sierra ",
-        " Tango ",
-        " Uniform ",
-        " Victor ",
-        " X-ray ",
-        " Yankee ",
-        " Zulu "
     };
 
+    private static final String[] alphaNames = {
+        ""," Alpha "," Bravo "," Charlie "," Delta ",
+        " Echo "," Foxtrot "," Golf "," Hotel ",
+        " India "," Juliet "," Kilo "," Lima "," Mike ",
+        " November "," Oscar "," Papa "," Quebec ",
+        " Romeo "," Sierra "," Tango "," Uniform ",
+        " Victor "," X-ray "," Yankee "," Zulu "
+    };
     /*
     private String convertLetter(String letter) {
-
     };*/
 
     public static String convertAlpha(String alpha) {
@@ -57,17 +36,6 @@ public class AlphaEncyption {
         }else{
             current = "DOWN";
         }
-        /*if (number % 100 < 20){
-            current = alphaNames[number % 100];
-            number /= 100;
-        }else{
-            current = alphaNames[number % 10];
-            number /= 10;
-            current = alphaNames[number % 10] + current;
-            number /= 10;
-        }
-        if (number == 0) return current;*/
-        //return alphaNames[number] + "hundred" + current;
-                return current;
-        };
+        return current;
+    };
 }

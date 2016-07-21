@@ -4345,10 +4345,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
-
+/* This is the title thingy */
 h1 {
   font-size: 4.2rem;
-  line-height: 110%;
+  line-height: 60%;
   margin: 2.1rem 0 1.68rem 0;
 }
 
@@ -4369,10 +4369,10 @@ h4 {
   line-height: 110%;
   margin: 1.14rem 0 0.912rem 0;
 }
-
+/* This is the subtitle thingy  */
 h5 {
   font-size: 1.64rem;
-  line-height: 110%;
+  line-height: 50%;
   margin: 0.82rem 0 0.656rem 0;
 }
 
@@ -7416,7 +7416,7 @@ input[type=range]:focus::-ms-fill-upper {
 .carousel {
   overflow: hidden;
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 300px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -7427,7 +7427,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .carousel .carousel-item {
-  width: 200px;
+  width: 300px;
   position: absolute;
   top: 0;
   left: 0;

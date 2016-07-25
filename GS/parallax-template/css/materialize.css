@@ -979,12 +979,32 @@
   color: #00b8d4 !important;
 }
 
+.Gblue {
+    background-color: #1684FB !important;
+}
+
+.RFox {
+    color: #E51837 !important;
+}
+
+.RfoxR {
+    background-color: #E51837 !important;
+}
+
 .teal {
   background-color: #009688 !important;
 }
 
 .teal-text {
   color: #009688 !important;
+}
+
+.my-white {
+    color: #FFFFFF !important;
+}
+
+.my-blue {
+    color: #1684FB !important;
 }
 
 .teal.lighten-5 {

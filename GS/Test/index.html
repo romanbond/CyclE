@@ -42,14 +42,14 @@
                                 <!-- ========== HEADLINE ========== -->
                                 <link rel="stylesheet" type="text/css" href="index.css">
                                 <!--<a class="link"><div>hello Groslen<small>We are coming soon.</small></div></a>  use target="_blank" to open in a new tab-->
-                                <h1><div><c1><a class="link" href="./beta/index.html">//</a><c2></c2><a class="link" href="./msc/index.html">Groslen</a></c1></h1></div></h1>
+                                <h1><div><c1><a class="link" href="./msc/index.html" id="seconds"></a><a class="link" href="./beta/index.html">//</a><c2></c2><a class="link" href="./msc/index.html">Groslen</a></c1></h1></div></h1>
                                 </link>
                                 <!--<font color="#FFFFFF">Total Seconds:</fonts><font color="#00FF00"><label id="seconds">00</label></font>-->
                                 <script type="text/javascript">
                                 var minutesLabel = document.getElementById("minutes");
         var secondsLabel = document.getElementById("seconds");
         var totalSeconds = 0;
-        setInterval(setTime, 1000);//1000 is for seconds
+        setInterval(setTime, 1);//1000 is for seconds
 
         function setTime()
         {

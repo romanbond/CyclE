@@ -143,10 +143,11 @@ public class CelsiusConverterGUI extends javax.swing.JFrame {
         for (int y=0; y < value2; money += OneYearDiv){
             OneYearDiv = money * 0.10;
             tall[y] = money;
+            System.out.println(tall[y]);
             y++;
             years = y;
         }
-        tall[years] = money;
+        //tall[years] = money;
         
         /*
         

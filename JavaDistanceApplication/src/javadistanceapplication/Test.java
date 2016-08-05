@@ -212,7 +212,7 @@ public class Test extends JPanel {
             scores.add((double) random.nextDouble() * maxScore);
 //            scores.add((double) i);
         }*/
-        Test mainPanel = new Test(scores,scores2);
+        Test mainPanel = new Test(scores);
         mainPanel.setPreferredSize(new Dimension(800, 300));
         JFrame frame = new JFrame("DrawGraph");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -168,18 +168,52 @@ public class Test extends JPanel {
     public List<Double> getScores() {
         return scores;
     }
-    
+    //This is the data
     private static void createAndShowGui() {
         List<Double> scores = new ArrayList<>();
+        List<Double> scores2 = new ArrayList<>();
         Random random = new Random();
-        int maxDataPoints = 40;
-        int maxScore = 10;
+        
+        // -------- This is where you put your function -------- //
+        
+        int maxDataPoints = 100;
+        int maxScore = 4000;
+        
+        double a = 4000000;
+        
+        //int b = 5;
+        double z = 0;
+        //For loop that adds the data to the doubles array scores
+        for(int x=0;x<maxDataPoints;a+=z){
+            z = a *0.10;
+            scores2.add(a);
+            x++;
+        }
+        
+        // -------- Sin Graph ------- //
+        
+        double degrees = 0;
+        
+        for(int x = 0; x<720; x++){
+            degrees++;
+            double radians = Math.toRadians(degrees);
+            scores.add(Math.sin(radians));
+            System.out.format("The sine of %.1f degrees is %.4f%n", degrees, Math.sin(radians));
+            
+        }
+        
+        System.out.format("The value of pi is %.4f%n", Math.PI);
+        //System.out.format("The sine of %.1f degrees is %.4f%n", degrees, Math.sin(radians));
+        
+        
+        // ---------------------------------------------------- // 
+        /*
         for (int i = 0; i < maxDataPoints; i++) {
             scores.add((double) random.nextDouble() * maxScore);
 //            scores.add((double) i);
-        }
-        Test mainPanel = new Test(scores);
-        mainPanel.setPreferredSize(new Dimension(800, 600));
+        }*/
+        Test mainPanel = new Test(scores,scores2);
+        mainPanel.setPreferredSize(new Dimension(800, 300));
         JFrame frame = new JFrame("DrawGraph");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(mainPanel);

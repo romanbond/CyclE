@@ -171,13 +171,14 @@ public class Test extends JPanel {
     //This is the data
     private static void createAndShowGui() {
         List<Double> scores = new ArrayList<>();
-        List<Double> scores2 = new ArrayList<>();
+        //List<Double> scores2 = new ArrayList<>();
         Random random = new Random();
         
         // -------- This is where you put your function -------- //
         
-        int maxDataPoints = 100;
-        int maxScore = 4000;
+        int maxDataPoints = 15
+                ;
+        int maxScore = 50;
         
         double a = 4000000;
         
@@ -186,10 +187,10 @@ public class Test extends JPanel {
         //For loop that adds the data to the doubles array scores
         for(int x=0;x<maxDataPoints;a+=z){
             z = a *0.10;
-            scores2.add(a);
+            scores.add(a);
             x++;
         }
-        
+        System.out.println(scores);
         // -------- Sin Graph ------- //
         
         double degrees = 0;
@@ -197,12 +198,12 @@ public class Test extends JPanel {
         for(int x = 0; x<720; x++){
             degrees++;
             double radians = Math.toRadians(degrees);
-            scores.add(Math.sin(radians));
-            System.out.format("The sine of %.1f degrees is %.4f%n", degrees, Math.sin(radians));
+            //scores.add(Math.sin(radians));
+           // System.out.format("The sine of %.1f degrees is %.4f%n", degrees, Math.sin(radians));
             
         }
         
-        System.out.format("The value of pi is %.4f%n", Math.PI);
+        //System.out.format("The value of pi is %.4f%n", Math.PI);
         //System.out.format("The sine of %.1f degrees is %.4f%n", degrees, Math.sin(radians));
         
         
